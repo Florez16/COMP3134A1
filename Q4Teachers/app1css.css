@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-weight: normal;
+    color: white;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.main {
+    display: flex;
+}
+
+.problem {
+    width: 850px;
+    height: 700px;
+    background-image: url("resources/blackboard.png");
+    background-repeat: no-repeat;
+}
+
+.header {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.num {
+    font-size: 35px;
+    margin-left: 200px;
+}
+
+.row1 {
+    display: flex;
+    margin-left: 100px;
+    font-size: 35px;
+}
+
+
+.multiplier {
+    padding-left: 50px;
+}
+
+.break_line {
+    font-size: 35px;
+    margin-left: 50px;
+}
+
+
+
+.question {
+    display: flex;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+#num, #multiply, #multiplier, #equal, #question_mark{
+    font-size: 50px;
+    margin: 20px;
+    color: white;
+}
+
+#num {
+    margin-left: 180px;
+}
+
+
+.answer {
+    font-size: 30px;
+    color:white;
+    display: flex;
+}
+
+#get_ans {
+    margin-left: 50px;
+    color: black;
+    width: 100px;
+    height: 100px;
+    font-size: 25px;
+}
+
+
+#submit, #next_button {
+    margin-left: 50px;
+    color: black;
+    width: 100px;
+    height: 100px;
+    font-size: 25px;
+}

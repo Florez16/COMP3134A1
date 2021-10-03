@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Teachers version</title>
+
+        <link rel="stylesheet" href="app1css.css">
+        <script src="script1.js"></script>
+
+    </head>
+    
+    <body>
+        <h1>Multiplication Game</h1>
+        
+
+
+        <div class="main">
+
+            <div class="problem">
+                <h2 class="header">Can You Solve the Following Problem?</h2>
+                <br>
+                <br>
+                <h3 id="num"></h3>
+                
+                <div class="row1">
+                    <h3 id="multiply">x</h3>
+                    <h3 id="multiplier"></h3>
+                </div>
+
+                <div class="row2">
+                    <h3 class="break_line">--------------------------------------------</h3>
+                </div>
+
+            </div>
+
+            <div class="teacher">
+                <img src="resources/teacher.png">
+            </div>
+        </div>
+
+        <div class="answer">
+            <h4 class="ans_header">Your answer: </h4>
+            <input type="number" id="get_ans" value=""><br><br>
+
+            <button id="submit" onclick="checkAnswer(num, multiplier);">Submit</button>
+            <button onclick="reload()" style="display: none;" id="next_button">Next</button>
+        </div>
+
+
+
+        <script>
+            var num = genRandomInt();
+            var multiplier = genRandomInt();
+
+            document.getElementById("multiplier").innerHTML = multiplier;
+            document.getElementById("num").innerHTML = num;
+
+
+        </script>
+    </body>
+
+</html>

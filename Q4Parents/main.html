@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Multiplication Table for Children</title>
+
+        <link rel="stylesheet" href="app1css.css">
+        <script src="script1.js"></script>
+
+    </head>
+    
+    <body>
+        <h1>Multiplication Game</h1>
+
+        <div class="main">
+            <div class="question">
+                <p id="cats" ></p>
+                <p class="times">X</p>
+                <p id="multiplier">0</p>
+                <p class="equal">=</p>
+                <input type="button" id="answer" value="">
+            </div>
+    
+            <div class="grid">
+                <div class="row">
+                    <button onclick="one()">1</button>
+                    <button onclick="two()">2</button>
+                    <button onclick="three()">3</button>
+                </div>
+    
+                <div class="row">
+                    <button onclick="four()">4</button>
+                    <button onclick="five()">5</button>
+                    <button onclick="six()">6</button>
+                </div>
+    
+                <div class="row">
+                    <button onclick="seven()">7</button>
+                    <button onclick="eight()">8</button>
+                    <button onclick="nine()">9</button>
+                </div>
+    
+                <div class="row">
+                    <button class="orange" onclick="del()">Clear</button>
+                    <button onclick="zero()">0</button>
+                    <button class="orange" onclick="checkAnswer(cats, multiplier);">Submit</button>
+                </div>
+                
+                
+            </div>
+        </div>
+
+
+        <div class="show_result">
+            <p id="result_img"></p>
+            <button onclick="reload()" style="display: none;" id="next_button">Next</button>
+        </div>
+
+        <script>
+            var cats = genRandomInt();
+            var multiplier = genRandomInt();
+
+            document.getElementById("multiplier").innerHTML = multiplier;
+            document.getElementById("cats").innerHTML = cats;
+        </script>
+    </body>
+
+</html>

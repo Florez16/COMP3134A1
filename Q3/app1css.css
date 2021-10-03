@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-weight: normal;
+    color: white;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url("resources/animal_background.jpg");
+    background-repeat: no-repeat;
+}
+
+.main {
+    background-color: antiquewhite;
+    width: 350px;
+    border-radius: 15px;
+
+}
+
+.h1title {
+    margin-left: 550px;
+    color: black;
+}
+
+.main {
+    margin-left: 500px;
+    background-color: white;
+}
+
+.show_result {
+    margin-left: 550px;
+}
+
+button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid black;
+    outline: none;
+    background-color: #505050;
+    color: white;
+    width: 100px;
+    margin: 5px 5px;
+    border-radius: 30px;
+
+}
+
+.orange {
+    background-color: #FF9500;
+}
+
+.question {
+    display: flex;
+}
+
+.equal, .times, #multiplier {
+    font-size: 50px;
+    margin: 10px;
+    color: black;
+}
+
+
+#answer {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid black;
+    outline: none;
+    background-color: yellow;
+    color: black;
+    width: 90px;
+    height: 50px;
+    margin: 5px 5px;
+
+
+}

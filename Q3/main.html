@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Multiplication Game (Q3)</title>
+
+        <link rel="stylesheet" href="app1css.css">
+        <script src="script1.js"></script>
+
+    </head>
+    
+    <body>
+        <h1 class="h1title">Can you do this for me?</h1>
+
+        <div class="main">
+            <div class="question">
+                <p id="cats" style="font-size: 30px;"></p>
+                <p class="times">X</p>
+                <p id="multiplier">0</p>
+                <p class="equal">=</p>
+                <input type="button" id="answer" value="">
+            </div>
+    
+            <div class="grid">
+                <div class="row">
+                    <button onclick="one()" style="background-color: #72e880;">1</button>
+                    <button onclick="two()" style="background-color: #db7bb1;">2</button>
+                    <button onclick="three()" style="background-color: #6bcbdb;">3</button>
+                </div>
+    
+                <div class="row">
+                    <button onclick="four()" style="background-color: #6bcbdb;">4</button>
+                    <button onclick="five()" style="background-color: #e8da5f;">5</button>
+                    <button onclick="six()" style="background-color: #934dc9;">6</button>
+                </div>
+    
+                <div class="row">
+                    <button onclick="seven()" style="background-color: #b8405c;">7</button>
+                    <button onclick="eight()" style="background-color: #6bcbdb;">8</button>
+                    <button onclick="nine()" style="background-color: #080808;">9</button>
+                </div>
+    
+                <div class="row">
+                    <button class="orange" onclick="del()">Clear</button>
+                    <button onclick="zero()">0</button>
+                    <button class="orange" onclick="checkAnswer(cats, multiplier);">Submit</button>
+                </div>
+                
+                
+            </div>
+        </div>
+
+
+        <div class="show_result">
+            <p id="result_img"></p>
+            <button onclick="reload()" style="display: none;" id="next_button">Next</button>
+        </div>
+
+        <script>
+            var cats = genRandomInt();
+            var multiplier = genRandomInt();
+            
+            document.getElementById("multiplier").innerHTML = multiplier;
+            document.getElementById("cats").innerHTML = genCats(cats);
+        </script>
+    </body>
+
+</html>
